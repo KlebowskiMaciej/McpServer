@@ -1,0 +1,13 @@
+{
+    "servers": {
+        "my-mcp-server-9bd8f0eb": {
+            "type": "stdio",
+            "command": "dotnet",
+            "args": [
+                "run",
+                "--project",
+                "C:\\pdtec\\dev\\McpServer\\McpServer\\McpServer.csproj"
+            ]
+        }
+    }
+}
