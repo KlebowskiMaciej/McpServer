@@ -12,7 +12,7 @@ public static class EasyTool
             using var httpClient = new HttpClient();
             httpClient.Timeout = TimeSpan.FromSeconds(10);
             
-            var response = await httpClient.GetStringAsync("http://localhost:8082/swagger/v1/swagger.json");
+            var response = await httpClient.GetStringAsync("swagger/v1/swagger.json");
             var swaggerDoc = System.Text.Json.JsonDocument.Parse(response);
             
             var endpoints = new List<string>();
